@@ -11,6 +11,7 @@ import "materialize-css/dist/js/materialize.min";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+import "firebase/compat/database";
 
 Vue.config.productionTip = false;
 Vue.use(messagePlugin);

@@ -100,9 +100,10 @@ export default {
         password: this.password,
       };
 
-      await this.$store.dispatch("login", formData);
-
-      this.$router.push("/");
+      try {
+        await this.$store.dispatch("login", formData);
+        this.$router.push("/");
+      } catch (e) {}
     },
   },
 };
